@@ -1,0 +1,28 @@
+GET http://localhost:3000/prefixo/teste
+
+###
+GET http://localhost:3000/categoria
+
+###
+GET http://localhost:3000/categoria/3
+
+###
+POST http://localhost:3000/categoria
+Content-Type: application/json
+
+{
+    "nome": "Categoria Super Teste",
+    "descricao": "Categoria Super Teste"
+}
+
+###
+PATCH http://localhost:3000/categoria/3
+Content-Type: application/json
+
+{
+    "nome": "Lazer",
+    "descricao": null
+}
+
+###
+DELETE http://localhost:3000/categoria/5
